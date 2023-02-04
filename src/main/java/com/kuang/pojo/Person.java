@@ -1,6 +1,8 @@
 package com.kuang.pojo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -8,8 +10,12 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-@ConfigurationProperties(prefix = "person")
+//@ConfigurationProperties(prefix = "person")
+//@PropertySource(value = "classpath:jiangying.properties")
 public class Person {
+    //jsr303校验
+    //el表达式选出配置的值
+//    @Value("${name}")
     private String name;
     private String age;
     private boolean happy;

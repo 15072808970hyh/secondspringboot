@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "dog")
+//@ConfigurationProperties(prefix = "dog")
 public class Dog {
 //    @Value("旺财")
     private String name;
